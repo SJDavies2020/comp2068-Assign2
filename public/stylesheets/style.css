@@ -1,8 +1,78 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+	color: #00b7ff;
+}
+
+button {
+	background-color: blue;
+	color: white;
+}
+hr{
+width :100%;
+margin-left: auto;
+margin-right: auto;
+height: 2px;
+background-color:black;
+margin-top: 20px;
+margin-bottom: 20px
+}
+
+.row
+{
+	margin: 30px;
+}
+
+label
+{
+	margin-right :20px;
+}
+form
+{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+button#btn1
+{
+	display: block;
+	position: relative;
+	width: 20%;
+	margin :10px;
+
+}
+
+button#btn2
+{
+	display: block;
+	position: relative;
+	width: 20%;
+	margin :10px;
+
+}
+
+form input
+{
+	display: inline-block;
+	margin: 5px;
+	width: 70%;
+}
+
+input#sName
+{
+	text-align: left;
+	width : 30%;
+}
+
+.quest{
+	width: 10%;
+}
+
+ul li
+{
+	text-decoration: none;
 }
