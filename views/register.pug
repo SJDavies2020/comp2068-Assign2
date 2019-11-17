@@ -1,0 +1,31 @@
+extends layout
+
+block content
+	//- Register Form Page HTML
+	section#contact
+		.container
+			h2.title.text-uppercase.mb-0 Sign Up:
+			.row
+				.col-lg-12
+					form#contact-form(action='/Resiter', method='post', role='form')
+						.row
+							.col-md-6
+								.input-group
+									.input-group-prepend
+										span.input-group-text.btn
+											i.fa.fa-user(aria-hidden='true')
+									input.form-control(type='text', placeholder='Username', required='required', data-validation-required-message='Please enter a username.')
+								.input-group
+									.input-group-prepend
+										span.input-group-text.btn
+											i.fa.fa-envelope(aria-hidden='true')
+									input.form-control(type='email', placeholder='Email', required='required', data-validation-required-message='Please enter your email address.')
+								.input-group
+									.input-group-prepend
+										span.input-group-text.btn
+											i.fa.fa-phone(aria-hidden='true')
+									input.form-control(type='tel', placeholder='Password', required='required',
+										data-validation-required-message='Please enter a password.')
+							.clearfix
+							.col-lg-12.text-center
+								button(type='submit') Submit
