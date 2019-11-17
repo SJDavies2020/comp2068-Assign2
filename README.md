@@ -1,26 +1,16 @@
 # comp2068-Assign2
 
-The following dependancies are part of this deployment:
+This application was built using Express.js and the Express generator for PUG
 
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "connect-flash": "^0.1.1",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "express-session": "^1.17.0",
-    "http-errors": "~1.6.3",
-    "mongoose": "^5.7.9",
-    "morgan": "~1.9.1",
-    "nodemailer": "^6.3.1",
-    "passport": "^0.4.0",
-    "passport-github": "^1.1.0",
-    "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^5.0.1",
-    "pug": "^2.0.4"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.3"
-  }
-}
+This application is currently live at : https://comp2068assign2.herokuapp.com/
+
+This is not a complete working application and should not be connsidered as such.
+
+Assignment 2 is to create a Survey Generator.
+
+The current work page in progress is :
+
+1. https://comp2068assign2.herokuapp.com/truefalse
+2. https://comp2068assign2.herokuapp.com/textarea
+3. https://comp2068assign2.herokuapp.com/multichoice
 
