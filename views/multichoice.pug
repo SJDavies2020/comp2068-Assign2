@@ -4,6 +4,8 @@ extends layout
 //- Website Name: 
 //- Description: This is the create page for multi-choice survey.
 //- Updated : 2019-10-13
+//- Updated : 2019-11-17 by Kelsey. Added name to form tag. Was overlapping with a form tag in the nav bar and impacting its formatting
+
 block content
   //- Bootstrap content below
   h1.Heading1
@@ -12,7 +14,7 @@ block content
     .container-fluid
       .row
         .col-xl-12.text-center
-        form(action='/multi_choice.pug', method='get')
+        form(action='/multi_choice.pug', method='get' name="choiceForm")
         | First name: 
         br
         button

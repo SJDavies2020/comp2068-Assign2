@@ -3,6 +3,32 @@ body {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+#home-section{
+	position: absolute;
+	padding: 50px;
+}
+
+h1#home-section {
+	font-size: 26;
+	padding-bottom: 20px;
+}
+
+p#home-section {
+	font-size: 18;
+}
+
+.home-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url("/images/Tokyo1 (opaque).png");
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
 a {
 	color: #00b7ff;
 }
@@ -11,6 +37,7 @@ button {
 	background-color: blue;
 	color: white;
 }
+
 hr{
 width :100%;
 margin-left: auto;
@@ -30,7 +57,8 @@ label
 {
 	margin-right :20px;
 }
-form
+
+form.choiceForm
 {
 	display: flex;
 	flex-direction: column;
