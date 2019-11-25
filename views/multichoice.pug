@@ -1,21 +1,52 @@
 extends layout
-//- File Name: multichoice.pug
+//- File Name: AboutMe.pug
 //- Author: Steven Davies
-//- Website Name: 
-//- Description: This is the create page for multi-choice survey.
+//- Website Name: www.sdavies.ca
+//- Description: This is the About Me page for the site.
 //- Updated : 2019-10-13
-//- Updated : 2019-11-17 by Kelsey. Added name to form tag. Was overlapping with a form tag in the nav bar and impacting its formatting
-
 block content
-  //- Bootstrap content below
-  h1.Heading1
-    h1.text-center Multi-Choice Surveys
-    br
-    .container-fluid
-      .row
-        .col-xl-12.text-center
-        form(action='/multi_choice.pug', method='get' name="choiceForm")
-        | First name: 
-        br
-        button
+	//- Bootstrap content below
+	h1.Heading1
+		h1.text-center Multi Choice Surveys
+		br
+		.container-fluid
+			.row
+				form
+					label#Sn Survey Name: 
+					input#sName(type='text', name='surveyName')
+				br
+			.row
+				br
+				hr
+				label(for='question') Question : 
+				input#quest(type='text', name='question')
+				form#question
+					.form-group
+					p How many text element?
+					select#valueTxt.arrows
+						option(value='1') 1
+						option(value='2') 2
+						option(value='3') 3
+						option(value='4') 4
+						option(value='5') 5
+						option(value='6') 6
+						option(value='7') 7
+						option(value='8') 8
+						option(value='9') 9
+						option(value='10') 10
+					button#btn7.btn.btn-primary Add Inputs
+					br
+					hr
+					ul.list-group#textElm
+					br
+					hr
+					button#btn5.btn.btn-primary Add Question
+					button#btn6.btn.btn-primary Save Survey
+				hr
+			.row
+				form
+					.form-group
+						h3 Survey:
+						ul.list-group#surID
+
 

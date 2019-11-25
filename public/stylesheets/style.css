@@ -17,6 +17,13 @@ p#home-section {
 	font-size: 18;
 }
 
+#MainH
+{
+	position: relative;
+	top: 50px;
+	text-decoration-line: underline;
+}
+
 .home-bg {
 	position: absolute;
 	top: 0;
@@ -56,11 +63,12 @@ margin-bottom: 20px
 label
 {
 	margin-right :20px;
+	display : inline-block;
 }
 
 form.choiceForm
 {
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
 	width: 80%;
 }
@@ -69,7 +77,6 @@ button#btn1
 {
 	display: block;
 	position: relative;
-	width: 20%;
 	margin :10px;
 
 }
@@ -78,9 +85,13 @@ button#btn2
 {
 	display: block;
 	position: relative;
-	width: 20%;
 	margin :10px;
 
+}
+
+form
+{
+	width :100%;
 }
 
 form input
@@ -97,10 +108,30 @@ input#sName
 }
 
 .quest{
-	width: 10%;
+	width: 30%;
 }
 
 ul li
 {
 	text-decoration: none;
+}
+
+input#sName
+{
+width: 50%;
+}
+
+select {
+	background-color: white;
+	border: thin solid grey;
+	border-radius: 4px;
+	display: inline-block;
+	font: inherit;
+	padding: 0.5em 3.5em 0.5em 1em;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+}
+#btn7, #btn6
+{
+	margin-left: 20px;
 }
