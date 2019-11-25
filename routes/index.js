@@ -1,5 +1,7 @@
 var express = require("express");
 var router = express.Router();
+var survey = require('../models/survey');
+
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
@@ -35,6 +37,16 @@ router.get("/multichoice", function(req, res, next) {
 /*Route for multi choice question builder */
 router.get("/textarea", function(req, res, next) {
 	res.render("textarea", { title: "Contact us" });
+});
+
+// Route for login page
+router.get("/login", function(req, res, next) {
+	res.render("login", { title: "Login" });
+});
+
+// Route for registration page
+router.get("/register", function(req, res, next) {
+	res.render("register", { title: "Register" });
 });
 
 module.exports = router;
