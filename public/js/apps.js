@@ -29,6 +29,10 @@ if (urlLocation.includes("truefalse")) {
 	surveyList = document.getElementById("surID");
 }
 
+// Code for the buttons on the Surveys Page
+else if (urlLocation.includes("surveys")) {
+}
+
 function getResult(isNumber) {
 	return (isNumber = "on" ? "True" : "False");
 }
