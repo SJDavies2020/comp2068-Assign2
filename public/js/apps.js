@@ -1,9 +1,3 @@
-const mongo = require('mongodb').MongoClient;
-const MongoClient = mongo.MongoClient;
-const ObjectID = mongo.ObjectID;
-
-const url = 'mongodb+srv://fake:user@cluster0-opu94.mongodb.net/test?retryWrites=true&w=majority';
-
 const urlLocation = window.location.href;
 let surveyList = null;
 let surveyOptions = null;
@@ -146,14 +140,4 @@ function SaveTFToDB(evt) {
 	evt.preventDefault();
 	let myJSON = JSON.stringify(qArray);
 	console.log(myJSON);
-	
-	MongoClient.connect(url, { useNewUrlParser: true }, (err, client) => {
-		if (err) throw err;
-		const db = client.db("surveys");
-		let doc = { myJSON };
-
-		db.collection('results').insertOne(doc).then((doc) => {
-			console.log('Survey inserted into MongoDb')
-		});
-	});
 }

@@ -7,18 +7,29 @@ var survey = require('../models/survey');
 router.get("/", function (req, res, next) {
 	res.render("index", { title: "Express" });
 });
+
 /*Route for Projects. */
 router.get("/aboutus", function (req, res, next) {
 	res.render("aboutus", { title: "About us" });
 });
+
 /*Route for About ME */
 router.get("/results", function (req, res, next) {
 	res.render("results", { title: "Results" });
 });
+
 /*Route for Surveys */
 router.get("/surveys", function (req, res, next) {
 	res.render("surveys", { title: "Surveys" });
 });
+
+//Retrieves survey results from database
+router.get("/surveys", async function (req, res, next) {
+	survey.find().then(survey => {
+		res.json(survey);
+	});
+});
+
 /*Route for Contact us */
 router.get("/contactus", function (req, res, next) {
 	res.render("contactus", { title: "Contact us" });
@@ -52,6 +63,12 @@ router.get("/register", function (req, res, next) {
 // Route for Create a Survey Page
 router.get("/create-survey", function (req, res, next) {
 	res.render("create-survey", { title: "Create a Survey" });
+});
+
+router.post('/', async(req, res, next) => {
+	const survey = new Survey(req.body);
+	await survey.save();
+	console.log("Survey saved");
 });
 
 module.exports = router;
