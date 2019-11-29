@@ -1,0 +1,33 @@
+extends layout
+//- File Name: AboutMe.pug
+//- Author: Steven Davies
+//- Website Name: www.sdavies.ca
+//- Description: This is the About Me page for the site.
+//- Updated : 2019-10-13
+block content
+	//- Bootstrap content below
+	h1.Heading1
+		h1#txtHead.text-center Text Area Surveys
+		br
+		.container-fluid
+			.row
+				form
+					label#Sn Survey Name: 
+					input#sName(type='text', name='surveyName')
+				br
+			.row
+				br
+				hr
+				form#question
+					.form-group
+						label(for='question') Question : 
+					input#quest(type='text', name='question')
+					br
+					button#btn3.btn.btn-primary Add Question
+					button#btn4.btn.btn-primary(type='button') Save Survey
+				hr
+			.row
+				form
+					.form-group
+						h3 Survey:
+						ul.list-group#surID

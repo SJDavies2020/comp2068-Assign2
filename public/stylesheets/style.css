@@ -1,0 +1,131 @@
+body {
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#home-section {
+	position: absolute;
+	padding: 50px;
+}
+
+h1#home-section {
+	font-size: 26;
+	padding-bottom: 20px;
+}
+
+p#home-section {
+	font-size: 18;
+}
+
+#MainH {
+	position: relative;
+	top: 50px;
+	text-decoration-line: underline;
+}
+
+.home-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url("/images/Tokyo1 (opaque).png");
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #00b7ff;
+}
+
+button {
+	background-color: blue;
+	color: white;
+}
+
+hr {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 2px;
+	background-color: black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.row {
+	margin: 30px;
+}
+
+label {
+	margin-right: 20px;
+	display: inline-block;
+}
+
+form.choiceForm {
+	display: inline-block;
+	flex-direction: column;
+	width: 80%;
+}
+
+button#btn1 {
+	display: block;
+	position: relative;
+	margin: 10px;
+}
+
+button#btn2 {
+	display: block;
+	position: relative;
+	margin: 10px;
+}
+
+form {
+	width: 100%;
+}
+
+form input {
+	display: inline-block;
+	margin: 5px;
+	width: 70%;
+}
+
+input#sName {
+	text-align: left;
+	width: 30%;
+}
+
+.quest {
+	width: 30%;
+}
+
+ul li {
+	text-decoration: none;
+}
+
+input#sName {
+	width: 50%;
+}
+
+select {
+	background-color: white;
+	border: thin solid grey;
+	border-radius: 4px;
+	display: inline-block;
+	font: inherit;
+	padding: 0.5em 3.5em 0.5em 1em;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+}
+#btn7,
+#btn6 {
+	margin-left: 20px;
+}
+
+#txtHead {
+	position: relative;
+	top: 50px;
+	text-decoration-line: underline;
+	margin-bottom: 20px;
+}

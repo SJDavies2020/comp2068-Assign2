@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+    p What Type of Survey Would You Like to Create?
+
+    //- buttons to creation pages for each survey. Need to add functionality after verifying true/false, multichoice and textarea page usages
+    button(type='button', onclick="location.href='/multichoice'") Multiple Choice
+    button(type='button', onclick="location.href='/truefalse'") True Or False
+    button(type='button', onclick="location.href='/textarea'") Text-based
