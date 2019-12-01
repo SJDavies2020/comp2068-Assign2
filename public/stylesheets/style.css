@@ -3,18 +3,17 @@ body {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-#home-section {
-	position: absolute;
-	padding: 50px;
+.home-section {
+	margin-top: 4%;
+	max-height: 70%;
 }
 
 h1#home-section {
 	font-size: 26;
-	padding-bottom: 20px;
 }
 
-p#home-section {
-	font-size: 18;
+article#homeSection2 {
+	background-color: #2285c8;
 }
 
 #MainH {
@@ -128,4 +127,35 @@ select {
 	top: 50px;
 	text-decoration-line: underline;
 	margin-bottom: 20px;
+}
+
+.selectSurveyMain {
+	display: inline-block;
+	text-align: center;
+	margin-top: 10%;
+	margin-left: 30%; 
+}
+
+#createSurveyButton {
+	padding: 10px;
+	font-size: 18px;
+	margin: 15px;
+}
+
+#aboutMe {
+	margin-top: 10%;
+	background-image: url("/images/Tokyo2.png");
+}
+
+#contact {
+	margin-top: 10%;
+}
+
+.truefalseSection {
+	margin-top: 7%;
+}
+
+.row#indexWelcome {
+	background-color:#2285c8;
+	color: white;
 }
