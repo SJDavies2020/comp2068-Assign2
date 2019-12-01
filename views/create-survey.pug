@@ -2,9 +2,17 @@ extends layout
 
 block content
 
-    p What Type of Survey Would You Like to Create?
+    .selectSurveyMain
 
-    //- buttons to creation pages for each survey. Need to add functionality after verifying true/false, multichoice and textarea page usages
-    button(type='button', onclick="location.href='/multichoice'") Multiple Choice
-    button(type='button', onclick="location.href='/truefalse'") True Or False
-    button(type='button', onclick="location.href='/textarea'") Text-based
+        .selectSurveryText
+            h2 What Type of Survey Would You Like to Create?
+
+            //- buttons to creation pages for each survey. Need to add functionality after verifying true/false, multichoice and textarea page usages
+            a#createSurveyButton.btn.btn-primary(href='/multichoice', role='button') Multiple Choice
+            a#createSurveyButton.btn.btn-primary(href='/truefalse', role='button') True or False
+            a#createSurveyButton.btn.btn-primary(href='/textarea', role='button') Text-Based
+            //- button#createSurveyButton(type='button', onclick="location.href='/multichoice'") Multiple Choice
+            
+            //- button#createSurveyButton(type='button', onclick="location.href='/truefalse'") True Or False
+            
+            //- button#createSurveyButton(type='button', onclick="location.href='/textarea'") Text-based

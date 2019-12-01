@@ -3,10 +3,42 @@ extends layout
 
 block content
 
-  .home-bg
+  //-.home-bg
 
-  #home-section
-    h1 Welcome to the Survery Generator
+  .home-section
 
-    #intro.col-med-3
-      p We endeaver to bring you a seamless experience between creating your surveys and viewing the end results from your target audiences. The world is vast and full of unknown opinions. Together we will bring them to light and embolden you for success.
+    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+        li(data-target='#carouselExampleIndicators', data-slide-to='1')
+        li(data-target='#carouselExampleIndicators', data-slide-to='2')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='/images/Testimage.png', alt='First slide')
+        .carousel-item
+          img.d-block.w-100(src='/images/Testimage.png', alt='Second slide')
+        .carousel-item
+          img.d-block.w-100(src='/images/Testimage.png', alt='Third slide')
+      a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+        #intro.col-med-3
+
+  article#homeSection2
+    .row.container.largepanel.center
+      h2(style='margin-bottom: 30px;')
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        | labore et dolore magna aliqua
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        | labore et dolore magna aliqua. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus.
+        | Faucibus nisl tincidunt eget nullam non nisi est sit amet. Amet dictum sit amet justo donec
+        | enim. Senectus et netus et malesuada fames ac turpis. Sagittis vitae et leo duis ut diam quam
+        | nulla. Ante in nibh mauris cursus mattis molestie. Risus ultricies tristique nulla aliquet.
+        | Egestas dui id ornare arcu odio ut sem nulla. Eget arcu dictum varius duis at consectetur lorem
+        | donec. Hendrerit dolor magna eget est lorem ipsum dolor sit amet. Tortor aliquam nulla facilisi
+        | cras fermentum. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Enim neque volutpat ac
+        | tincidunt. Amet dictum sit amet justo donec enim diam. Leo vel fringilla est ullamcorper eget.
