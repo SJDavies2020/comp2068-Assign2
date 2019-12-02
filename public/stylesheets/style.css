@@ -6,6 +6,8 @@ body {
 .home-section {
 	margin-top: 4%;
 	max-height: 70%;
+	background-color: grey;
+	background-size: cover;
 }
 
 h1#home-section {
@@ -14,6 +16,7 @@ h1#home-section {
 
 article#homeSection2 {
 	background-color: #2285c8;
+	background-size: cover;
 }
 
 #MainH {
@@ -158,4 +161,8 @@ select {
 .row#indexWelcome {
 	background-color:#2285c8;
 	color: white;
+}
+
+#resourceLinks {
+	margin: 10px;
 }

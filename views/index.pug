@@ -14,11 +14,11 @@ block content
         li(data-target='#carouselExampleIndicators', data-slide-to='2')
       .carousel-inner
         .carousel-item.active
-          img.d-block.w-100(src='/images/Testimage.png', alt='First slide')
+          img.d-block.w-100(src='/images/Welcome-transp.png', alt='First slide')
         .carousel-item
-          img.d-block.w-100(src='/images/Testimage.png', alt='Second slide')
+          img.d-block.w-100(src='/images/Top-10-Transp.png', alt='Second slide')
         .carousel-item
-          img.d-block.w-100(src='/images/Testimage.png', alt='Third slide')
+          img.d-block.w-100(src='/images/Types-Transp.png', alt='Third slide')
       a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
         span.carousel-control-prev-icon(aria-hidden='true')
         span.sr-only Previous
@@ -30,15 +30,22 @@ block content
   article#homeSection2
     .row.container.largepanel.center
       h2(style='margin-bottom: 30px;')
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        | labore et dolore magna aliqua
-      p
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        | labore et dolore magna aliqua. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus.
-        | Faucibus nisl tincidunt eget nullam non nisi est sit amet. Amet dictum sit amet justo donec
-        | enim. Senectus et netus et malesuada fames ac turpis. Sagittis vitae et leo duis ut diam quam
-        | nulla. Ante in nibh mauris cursus mattis molestie. Risus ultricies tristique nulla aliquet.
-        | Egestas dui id ornare arcu odio ut sem nulla. Eget arcu dictum varius duis at consectetur lorem
-        | donec. Hendrerit dolor magna eget est lorem ipsum dolor sit amet. Tortor aliquam nulla facilisi
-        | cras fermentum. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Enim neque volutpat ac
-        | tincidunt. Amet dictum sit amet justo donec enim diam. Leo vel fringilla est ullamcorper eget.
+        | Ready to Create Your Own Survey?
+      
+      p.center-text 
+          | Before jumping in to create a survey, take time to consider what it is you are looking to 
+          | ask your audience. The effects of asking the wrong audience, surveyer bias, unclear 
+          | questions in your survey can be detrimental to your results. We've provided some starter 
+          | resources below to get you thinking about how to build the best survey to get the 
+          | information you need as well as how to format your data afterwards for results.
+
+      .resourcesSection
+        
+        a#resourceLinks(href='https://www.qualtrics.com/blog/10-tips-for-building-effective-surveys/')
+          img(alt='Tips to Build an Effective Survey', src='/images/Effective-Surveys.png', width='110"', height='150')
+        a#resourceLinks(href='https://www.surveygizmo.com/resources/blog/designing-surveys/')
+          img(alt='Things to Consider When Designing a Survey', src='/images/10-Consider.png', width='110"', height='150')
+        a#resourceLinks(href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2917255/')
+          img(alt='Avoiding Bias in Your Surveys', src='/images/Avoid-Bias.png', width='110"', height='150')
+        a#resourceLinks(href='https://en.wikipedia.org/wiki/Normalization_(statistics)')
+          img(alt='What is Normalization of Data?', src='/images/Normalization.png', width='110"', height='150')
